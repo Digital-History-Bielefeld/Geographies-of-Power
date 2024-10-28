@@ -1,0 +1,2 @@
+spacy==3.7.2
+notebook==7.0.6
