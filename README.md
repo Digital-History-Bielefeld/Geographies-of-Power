@@ -97,10 +97,10 @@ Of course, this course can only show you the basics of Python programming. It's 
     - Anaconda is a distribution of Python that comes with a lot of useful packages for data analysis and scientific computing. It also comes with a package manager called conda that makes it easy to install new packages. So it is a good choice for beginners where you have everything in one place. But it is very large and can take up a lot of space on your computer. We also recommend to get used to work with the normal Python installation.
 
 ### GitHub and Git
-    - https://docs.github.com/en
-    - https://docs.github.com/en/repositories
-    - https://docs.github.com/en/codespaces
-    - https://git-scm.com/
+- https://docs.github.com/en
+- https://docs.github.com/en/repositories
+- https://docs.github.com/en/codespaces
+- https://git-scm.com/
 
 ### General Resources
 - [Visual Studio Code](https://code.visualstudio.com/)
