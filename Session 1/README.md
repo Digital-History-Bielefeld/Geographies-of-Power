@@ -1,5 +1,7 @@
 # Session 1: Python Basics I
 
+In this session, we will learn the very basics of Python. We will learn how to write a simple Python program, how to work with variables, data types, and operators, and how to use Python built-in functions. We will also learn how to work with lists, tuples, and dictionaries. This concepts are the foundation of every programming language. If you understand these concepts, you can build on them and learn more advanced concepts. So take your time to understand them!
+
 ## How to work with Python
 - **Python Interpreter**: You can run Python code in an interactive environment. You can start the Python interpreter by typing `python` in your terminal. You can type Python code directly into the interpreter and it will execute it immediately. This is a great way to test small pieces of code.
   - Try it out: Open your terminal and type `python`. You should see the Python interpreter starting. Now you can type `print("Hello, World!")` and press enter. You should see the output `Hello, World!`.

@@ -1,5 +1,21 @@
 # Session 2: Python Basics II
 
+You have learned some of the basics of Python in the first session:
+- Variables
+- Data types
+- Operators
+- Lists/Tuples
+- Dictionaries
+
+In this session you will learn more about Python and its possibilities. You will learn about:
+- **Flow Control**: If-Elif-Else Statements, While Loops, For Loops
+- **Strings**: How to work with strings in Python
+- **Working with files**: How to read from and write to files
+- **Functions**: How to define and use functions
+- **Classes and Objects**: How to define and use classes and objects
+
+These topics are very important to structure your code and to make it more readable and reusable. You can find this concepts in nearly every programming language, so take your time to understand them.
+
 ## Flow Control
 
 Flow control statements are used to control the flow of execution in a program. At many points in your program, you may want to make a decision about which block of code to execute next. You can do this with flow control statements. For this you need comparison operators and especially boolean values.
@@ -7,7 +23,7 @@ Flow control statements are used to control the flow of execution in a program. 
 ### Comparison Operators
 
 | Operator | Meaning                  |
-| -------- | ------------------------  |
+| -------- | ------------------------ |
 | ==       | Equal                    |
 | !=       | Not equal                |
 | >        | Greater than             |
@@ -17,7 +33,7 @@ Flow control statements are used to control the flow of execution in a program. 
 
 ### Boolean operators
 
-| Operator | Meaning                  |
+| Operator | Meaning                   |
 | -------- | ------------------------  |
 | and      | Logical and               |
 | or       | Logical or                |
@@ -188,7 +204,7 @@ The `with` statement in Python is used to open files safely and automatically ha
 ```python
 # Open a file for reading
 with open("example.txt", "r") as file:
-    content = file.read()  # Reads the entire file content
+    content = file.read() # Reads the entire file content
 ```
 
 In this example:
@@ -239,7 +255,7 @@ s
 
 ## Functions
 
-Functions are a block of code that only runs when it is called. You can pass data, known as parameters, into a function and the function can return data as a result. You can compare it with a recipe. You have a set of instructions and you can use it whenever you want. You already used some functions, like `print()` or `len()`. 
+Functions are a block of code that only runs when it is called. You can pass data, known as parameters or arguments, into a function and the function can return data as a result. You can compare it with a recipe. You have a set of instructions and you can use it whenever you want. You already used some functions, like `print()` or `len()`. 
 Functions are part of every programming language and are very important to structure your code. They make your code more readable and reusable, because you can use the same code multiple times and you don't have to write it again.
 
 A function has the following elements:

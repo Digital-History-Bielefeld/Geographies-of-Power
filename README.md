@@ -39,20 +39,23 @@ The workshop is structured as follows: There is a folder for each of the followi
 
 **Session 2: Python Basics II**
 - Flow control
+- Strings
+- Working with files
 - Functions and classes
-- Modules, packages and libraries
 
-**Session 3: Natural Language Processing (NLP)**
+**Session 3: Natural Language Processing (NLP)**^
+- Modules/Packages/Libraries
+  - Your own web scraping project
 - Introduction to NLP
-- Introduction to spaCy
+- Introduction to spaCy & displaCy
 
 **Session 4: Data Analysis for Historians**
+Your own project with:
 - Rule-based data queries with spaCy
 - Regular expressions
-- Data visualization with displaCy
 
 
-## How to start
+## Good to know:
 
 ### 1. GitHub
 GitHub is a platform that has become an integral part of modern collaborative software development, but is now also used by many other teams as a version control tool. In a nutshell, GitHub is a web-based platform that offers version control and collaboration in the development of software projects. GitHub acts as a centralized hub for managing and collaborating on code. It utilizes a version control system called Git, which tracks changes made to code over time. This ensures that multiple contributors can work on a project simultaneously without conflicts, and it allows developers to roll back to previous versions if needed.
@@ -68,6 +71,7 @@ The user interface of a Codespace is based on Visual Studio Code. Visual Studio 
 Jupyter Notebooks are a great way to write and run Python code. They allow you to write code in cells and run them individually. This is very useful for testing small pieces of code or for writing code that is not part of a larger program. Jupyter Notebooks are widely used in the data science community and are a great tool for learning Python. You can find more information about Jupyter Notebooks in the [resources](#resources) section. In this course we will work sometimes with Jupyter Notebooks, but mostly we try to train you to work with "normal" Python scripts, so that you can use your knowledge in other environments as well.
 
 -------------------------------------------------------------
+## Getting started
 
 To start, all participants must set up a codespace. We will be working with codespaces throughout the course.
 
@@ -109,6 +113,10 @@ Of course, this course can only show you the basics of Python programming. It's 
 - [Jupyter Notebooks](https://jupyter.org/)
   - The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text.
 - We have offered [a very similar course (in terms of content)](https://github.com/Digital-History-Bielefeld/WORCK-Training-School-2) where a few more learning resources can be found. For example, how to use the terminal or a few interesting example projects that are a good exercise.
+- Virtual Environments in Python explained:
+  - https://docs.python.org/3/library/venv.html
+  - https://realpython.com/python-virtual-environments-a-primer/
+  - https://docs.python-guide.org/dev/virtualenvs/
 
 ### And some fun stuff
 - [Advent of Code](https://adventofcode.com/)
