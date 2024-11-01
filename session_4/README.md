@@ -105,7 +105,7 @@ Additionally, you can pass a filename as a second parameter. This filename shoul
 
 Now you can see the result of the function in the wordcloud.png file. Play around with this with different persons and see what you can find out about the context of the persons in the data set. Are there any interesting words that appear with the persons? Does it make sense? 
 
-Some final thoughts about the task:
+### Some final thoughts about the task:
 - This methods could be useful to get an overview of the data set and the persons in the data set. You can use this to get a first impression.
 - For a small data set like this, it is not very useful. But if you have a big data set with many persons, this could be a good way to get an overview of the data set. Especially if it is too much data to read it all.
 - Normally you would work with a better cleaned data set. But for this task, we had to work with the data set as it is. Data cleaning of historical data could fill an entire course on its own.
