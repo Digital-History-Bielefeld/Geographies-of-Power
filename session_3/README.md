@@ -215,6 +215,3 @@ A **token** is a single unit of text, such as a word or punctuation mark. It can
 
 #### Corpus
 A **corpus** is a collection of text data, such as a set of documents, articles, or books. Corpora are used for training and testing NLP models, as well as for analyzing and extracting information from text data. For example, a corpus of historical documents can be used to study language patterns, topics, and trends over time.
-
-#### Document
-A **document** is a single piece of text data and collection of tokens. It can be a sentence, paragraph, article, or any other unit of text. Documents are used for text analysis, classification, and information extraction. For example, a document can be analyzed for sentiment, named entities, or topics.
