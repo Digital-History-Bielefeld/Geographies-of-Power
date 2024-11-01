@@ -22,41 +22,6 @@ So let's get started with the first part!
 
 ## Modules, Packages and Libraries
 
-### Modules and Packages
-**Modules** and **Packages** are ways to organize Python code for reusability and structure. A **module** is a single `.py` file containing Python code, which can include functions, variables, and classes. You can create and import modules to use their code in other Python files. For example, if you save the following code as `calculator.py`, it becomes a module:
-
-```python
-# calculator.py
-def add(a, b):
-    return a + b
-```
-
-You can import and use this module in another file like this:
-
-```python
-import calculator
-
-result = calculator.add(3, 5)
-print(result)  # Output: 8
-```
-
-A **package** is a collection of related modules stored in a directory with an `__init__.py` file. Packages are used to group similar modules together. It is a good way to organize your code if your project grows larger.
-For example, if you create a folder named `utilities` and place `calculator.py` in it, along with an `__init__.py` file, you can import it as a package:
-
-```python	
-# utilities/calculator.py
-def add(a, b):
-    return a + b
-```
-
-```python
-from utilities import calculator
-
-result = calculator.add(3, 5)
-print(result)  # Output: 8
-```
-
-
 ### Libraries
 
 A library in Python is a collection of packages and modules bundled together, usually designed for a specific purpose or task. Libraries make it easy to perform complex tasks without needing to write all the code yourself. For example, the popular library requests helps you handle HTTP requests. You first install it (usually via pip install requests) and then import it into your script.
