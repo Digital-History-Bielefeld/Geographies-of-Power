@@ -208,6 +208,9 @@ Some POS tags:
 - `VERB`: Verb
 - `ADP`: Adposition (preposition or postposition)
 - `PUNCT`: Punctuation
+- `ADJ`: Adjective
+- `NOUN`: Noun
+
 
 Some dependency labels:
 - `nsubj`: Nominal subject

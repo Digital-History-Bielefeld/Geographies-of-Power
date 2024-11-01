@@ -82,6 +82,12 @@ Follow the instructions below to open your codespace and dive into a hassle-free
 3. Click on the Plus-Button to create a new codespace
 4. A new window opens in which you can see a Visual Studio Code environment. This is your codespace. You can now start working on the content of the first learning unit in folder "session-1".
 
+## Disclaimer
+
+This course is designed for beginners with no prior programming experience. We will cover the basics of Python programming and introduce you to some of the most common libraries used in the humanities. We will also provide you with some resources to help you continue learning on your own. 
+While doing this course, you will see that many things are not working as smoothly as we would like them to. 
+1.) One the one hand, we are working with raw historical data. Normally, you would have to clean the data first before you can work with it. We skip this (very important) step in this course. But the results are only as good as the data you work with. So if you are working at home with your own data, you should always clean it first. Below, you will find some resources on how to clean (historical) data. Be prepared that this step will take a lot of time.
+2.) On the other hand, we are working with a small amount of data. Normally, you would work with much larger data sets. The real power of working with Digital Methods come with large text corpora. But for the beginning, this small data set is enough to get you started. You can also keep in mind: If I would work with the whole webpage, how much time could I save with my Python script?
 
 ## Resources
 
@@ -99,6 +105,17 @@ Of course, this course can only show you the basics of Python programming. It's 
   - https://programminghistorian.org/en/lessons/introduction-and-installation
   - [Anaconda](https://www.anaconda.com/)
     - Anaconda is a distribution of Python that comes with a lot of useful packages for data analysis and scientific computing. It also comes with a package manager called conda that makes it easy to install new packages. So it is a good choice for beginners where you have everything in one place. But it is very large and can take up a lot of space on your computer. We also recommend to get used to work with the normal Python installation.
+
+### Cleaning Data
+- Regular Expressions:
+  - [Regular Expressions in Python](https://docs.python.org/3/library/re.html)
+  - We have also prepared a small [project to regular expressions](https://github.com/Digital-History-Bielefeld/WORCK-Training-School-2/tree/main/projects/text_preprocessing_with_regular_expressions) in another course. Feel free to check it out.
+- [OpenRefine](http://openrefine.org/)
+  - OpenRefine is a powerful tool for cleaning and transforming messy data. It allows you to import data in various formats, clean it, transform it, and export it in various formats. It is especially useful for cleaning data that is not well-structured or that contains errors.
+  - [OpenRefine Tutorial](https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine)
+- Another typical tool for cleaning data is breaking down the whole text into its important parts. You can do this best with the [Natural Language Toolkit (nltk)](https://www.nltk.org/) in Python. 
+  - We have also prepared a small [project to nltk](https://www.nltk.org/)
+  
 
 ### GitHub and Git
 - https://docs.github.com/en
