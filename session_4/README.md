@@ -1,6 +1,8 @@
 # Python Project - Part 2
 
-In this part of the project you will combine the learning from the previous sessions to answer some questions about the data. This content is a good exercise for tomorrow's final project. Afterwards, you should be ready to address your own questions to the material and answer them using simple Python methods. With this prepared data, you can then - if you want to continue working with Python - perform more complex analyses, such as topic modeling, sentiment analysis or social networks. 
+In this part of the project you will combine the learning from the previous sessions to answer some questions about the data. This content is a good exercise for tomorrow's final project. Afterwards, you should be ready to address your own questions to the material and answer them using simple Python methods. With this prepared data, you can then - if you want to continue working with Python - perform more complex analyses, such as topic modeling, sentiment analysis or social networks.
+
+**Note:** If you want, you can already work with your source, you need to work with in you group project. This way you can already prepare the data for the final project. For this, you need to do the BeautifulSoup and requests part with your source. If you need help with this, you can ask me.
 
 ## Questions
 1. What are the 5 most important persons in the data set?
