@@ -84,9 +84,13 @@ Follow the instructions below to open your codespace and dive into a hassle-free
 
 ## Disclaimer
 
-This course is designed for beginners with no prior programming experience. We will cover the basics of Python programming and introduce you to some of the most common libraries used in the humanities. We will also provide you with some resources to help you continue learning on your own. 
+This course is designed for beginners with no prior programming experience. We will cover the basics of Python programming and introduce you to some of the most common libraries used in the humanities. We will also provide you with some resources to help you continue learning on your own. The most important thing is: do not be afraid to make mistakes. Programming is a skill that takes time to develop, and the best way to learn is by doing. So don't be afraid to experiment and try new things. And also keep in mind that everyone has a different learning pace. So don't worry if you don't understand everything right away. Just keep practicing and most importantly: have fun!
+
+
 While doing this course, you will see that many things are not working as smoothly as we would like them to. 
+
 1.) One the one hand, we are working with raw historical data. Normally, you would have to clean the data first before you can work with it. We skip this (very important) step in this course. But the results are only as good as the data you work with. So if you are working at home with your own data, you should always clean it first. Below, you will find some resources on how to clean (historical) data. Be prepared that this step will take a lot of time.
+
 2.) On the other hand, we are working with a small amount of data. Normally, you would work with much larger data sets. The real power of working with Digital Methods come with large text corpora. But for the beginning, this small data set is enough to get you started. You can also keep in mind: If I would work with the whole webpage, how much time could I save with my Python script?
 
 ## Resources
