@@ -115,13 +115,13 @@ Of course, this course can only show you the basics of Python programming. It's 
   - [OpenRefine Tutorial](https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine)
 - Another typical tool for cleaning data is breaking down the whole text into its important parts. You can do this best with the [Natural Language Toolkit (nltk)](https://www.nltk.org/) in Python. 
   - We have also prepared a small [project to nltk](https://www.nltk.org/)
-  
 
 ### GitHub and Git
 - https://docs.github.com/en
 - https://docs.github.com/en/repositories
 - https://docs.github.com/en/codespaces
 - https://git-scm.com/
+
 
 ### General Resources
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -134,6 +134,11 @@ Of course, this course can only show you the basics of Python programming. It's 
   - https://docs.python.org/3/library/venv.html
   - https://realpython.com/python-virtual-environments-a-primer/
   - https://docs.python-guide.org/dev/virtualenvs/
+- HTML and CSS:
+  - https://www.w3schools.com/html/
+  - https://www.w3schools.com/css/
+- [Codecademy](https://www.codecademy.com/)
+  - Codecademy is an online interactive platform that offers free coding classes in 12 different programming languages including Python, Java, PHP, JavaScript, Ruby, SQL, and Sass, as well as markup languages HTML and CSS.
 
 ### And some fun stuff
 - [Advent of Code](https://adventofcode.com/)
