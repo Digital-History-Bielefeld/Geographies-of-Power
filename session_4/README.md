@@ -2,7 +2,7 @@
 
 In this part of the project you will combine the learning from the previous sessions to answer some questions about the data. This content is a good exercise for tomorrow's final project. Afterwards, you should be ready to address your own questions to the material and answer them using simple Python methods. With this prepared data, you can then - if you want to continue working with Python - perform more complex analyses, such as topic modeling, sentiment analysis or social networks.
 
-**Note:** If you want, you can already work with your source, you need to work with in you group project. This way you can already prepare the data for the final project. For this, you need to do the BeautifulSoup and requests part with your source. If you need help with this, you can ask me.
+**Note:** If you want, you can already work with the source which you will use for the final project. This way you can already prepare the data for it. For this, you need to do the BeautifulSoup and requests part with your source. If you need help with this, you can ask me.
 
 ## Questions
 1. What are the 5 most important persons in the data set?
@@ -23,7 +23,7 @@ a)
 - Create an empty list called `persons` and iterate over the entities in the doc object. If the entity is a person (`ent.label_ == "PERSON"`), append it to the list. 
 - For counting the number of times each person appears in the data set, you can use the `Counter` class from the `collections` module. This is a helpful tool for counting the number of times each element appears in a list and returning the most common elements.
     - Counter: https://docs.python.org/3/library/collections.html#collections.Counter
-    - .most_common(): https://docs.python.org/3/library/collections.html#collections.Counter.most_common
+    - `.most_common()`: https://docs.python.org/3/library/collections.html#collections.Counter.most_common
     - Try to understand how to use the Counter class and the most_common method. As a value for the most_common method, you can pass the top_n parameter.
     - Don't forget to import the Counter class at the beginning of your file: `from collections import Counter`.
 - Return the most common persons from the data set.

@@ -30,7 +30,7 @@ d) Use the requests library to get the HTML code from the URL. Save the response
   ```
 You can read how to do this in the [requests documentation](https://requests.readthedocs.io/en/latest/user/quickstart/#make-a-request).
 
-e) Check if the request was successful. This is important because the website might not exist or the server might be down. You can check the status code with the request function `.raise_for_status()`. If the status code is not 200, raise an exception with the message "The website is not available.".
+e) You need to check inside your function, if the request (which you do if you will call the get_webpage_data-function) was successful. This is important because the website might not exist or the server might be down. You can check the status code with the request function `.raise_for_status()`. If the status code is not 200, raise an exception with the message "The website is not available.".
 
 ```python
 response.raise_for_status()
@@ -43,9 +43,9 @@ g) Call the function with your url variable as an argument below the function de
 
 ### 3. Use BeautifulSoup to Parse the HTML Code
 
-a) Import the BeautifulSoup library you just installed: `from bs4 import BeautifulSoup`. Do this under the import statement of the requests library.
+a) Import the BeautifulSoup library you just installed: `from bs4 import BeautifulSoup`. Do this under the import statement of the requests library. Import statements should always be at the top of your script.
 
-b) To create a BeautifulSoup object, you need to pass the HTML code and a parser to the BeautifulSoup constructor. The parser is responsible for creating the parse tree. We will use the default parser, which is the Python built-in parser `html.parser`. Create a BeautifulSoup object and save it in a variable called `soup`:
+b) To create a BeautifulSoup object, you need to pass the HTML code and a parser to the BeautifulSoup constructor. A constructor is a special method that is called when an object is created. You don't need to know in detail how this works. The parser is responsible for creating the parse tree. We will use the default parser, which is the Python built-in parser `html.parser`. Create a BeautifulSoup object and save it in a variable called `soup` inside your get_webpage_data function (under `response = response.raise_for_status()`):
 
 ```python
 soup = BeautifulSoup(response.text, 'html.parser')

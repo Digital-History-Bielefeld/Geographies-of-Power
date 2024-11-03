@@ -33,7 +33,11 @@ f) You can now iterate over the tokens (`in doc`) and print the text of each tok
 
 g) In the readme-file of Session 3 and in [spaCy's 101](https://spacy.io/usage/spacy-101#annotations-token) you have some more examples, what you can do with a text. Play around with the possibilities. Use different text inputs and try out the different attributes of the tokens.
 
-h) Now we want to  try out the named entity recognition (NER). You can do this with `doc.ents`. Print the text and the label of the entities of "Apple is a company and is located in California. It was founded by Steve Jobs.".
+h) Now we want to try out the named entity recognition (NER). You can do this with `doc.ents`. For this you need to use this syntax:
+```python
+for entity in doc.ents:
+```
+Print the text (`doc.text`) and the label (`doc.label_`) of the entities of "Apple is a company and is located in California. It was founded by Steve Jobs.".
 
 Here you have a list of the [entity types](https://spacy.io/models/en#en_core_web_sm-labels) that the english spaCy model can recognize:
 
@@ -60,7 +64,7 @@ Here you have a list of the [entity types](https://spacy.io/models/en#en_core_we
 
 i) You can also visualize the entities with displaCy: https://spacy.io/usage/visualizers. For this you need to import displacy under your spaCy import with `from spacy import displacy`. 
 
-j) Then run the `displacy.serve()` function. Pass the `doc` and the style=`ent` as arguments.
+j) Then run the `displacy.serve()` function. Pass the `doc` and the `style="ent"` as arguments.
 
 k) Open the link in your browser and see the visualization of the entities.
 

@@ -43,7 +43,7 @@ The workshop is structured as follows: There is a folder for each of the followi
 - Working with files
 - Functions and classes
 
-**Session 3: Natural Language Processing (NLP)**^
+**Session 3: Web Scraping & Natural Language Processing (NLP)**
 - Modules/Packages/Libraries
   - Your own web scraping project
 - Introduction to NLP
@@ -52,7 +52,7 @@ The workshop is structured as follows: There is a folder for each of the followi
 **Session 4: Data Analysis for Historians**
 Your own project with:
 - Rule-based data queries with spaCy
-- Regular expressions
+- Visualization
 
 
 ## Good to know:
