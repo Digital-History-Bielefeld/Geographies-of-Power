@@ -63,23 +63,25 @@ First, we should consider what we need for this task.
   - We need a function that extracts the tokens in context of the persons. 
   - Maybe it is useful to pass only one person to the function, so we can analyze the context of each person separately and get a better overview.
   - We learned in the last session that there are different writings of the same person. So we need to handle this.
-  - The context could be anything. So we need to decide which context we mean. We could for example extract the nouns or verbs that appear before and after the person to get an first impression. But this is up to you and you can decide what you want to extract and play around with it.
+  - The context could be anything. So we need to decide which context we mean. We could for example extract the nouns or verbs that appear in the same sentence as the person to get an first impression. But this is up to you and you can decide what you want to extract and play around with it.
 
 a)
 - Write a new function called `get_person_context` that takes a text and a list of different writings of persons name (`person_names`) as input. The function should return the tokens in context of the person.
 - Create a doc object with the nlp model and the text.
 - We want to work with the Matcher class from spaCy (https://spacy.io/usage/rule-based-matching). With the Matcher class we can define patterns that we want to find in the text. We can use this to find the person in the text and then extract the context. Because this is a bit more complex, you can just follow my instructions and try to understand what happens there. Otherwise (or at home with more time) you can try to understand the Matcher class and implement it yourself. 
-For this, we need to import the Matcher class at the beginning of the file: `from spacy.matcher import Matcher`.
+
+- First we need to import the Matcher class at the beginning of the file: `from spacy.matcher import Matcher`.
 - Create a variable called `matcher` and assign a new Matcher object to it. The Matcher object should be created with the nlp model. This looks like this: `matcher = Matcher(nlp.vocab)`.
-- Iterate over each person_name in  `person_names` create a pattern for each person:
-  - We want to match both upper and lower case names. Therefore, we should create a pattern that matches the person in the text. For this, we need to create a list with dictionaries. Each dictionary should have **the key "LOWER"** and the **value should be the lower case name of the person**. We can use the `person.lower()` method to get the lower case name.
-  Create a variable `pattern` and assign the list with the dictionary to it.
+- Iterate over each person_name in `person_names` create a pattern for each person:
+  - We want to match both upper and lower case names. Therefore, we should create a pattern that matches the person in the text. For this, we need to create a list with a dictionary. The dictionary should have **the key "LOWER"** and the **value should be the lower case name of the person**. We can use the `person.lower()` method to get the lower case name. Create a variable `pattern` and assign the list with the dictionary to it. This will help us ensure that we can find the person's name in the text regardless of how it is capitalized and for this we use the LOWER key, which is a special key for the Matcher class.
   - Add the pattern to the matcher object with the `matcher.add` method. As a first parameter, you can pass a unique name for the pattern (e.g. `"PERSON_NAME"`) and as a second parameter the pattern (`[pattern]`). This looks like this: `matcher.add("PERSON_NAME", [pattern])`.
 - Now we want to iterate over the matches in the text (the context-words). For this create a new variable called `context_words` and assign an empty list to it. 
 - Iterate over the matches in the text with the matcher object. You can use the following syntax: `for match_id, start, end in matcher(doc):`. Match_id is the unique name of the pattern, start is the start index of the match and end is the end index of the match.
 - Create a variable called `span` and assign the span of the match to it. You can get the span with the following syntax: `span = doc[start:end].sent`. This gives you the sentence of the match.
 - Iterate over the tokens in the span.
 - If `token.pos_` (which is the Part-of-Speech tag of the token) is in `["NOUN", "VERB", "ADJ"]`, append the `token.lemma_` to the context_words list. We use the lemma of the token to get the base form of the word.
+
+**Note:** Before looking for the context words, you would normally delete the stop words from the text. But for this task, we can skip this step, because we are looking for very specific POS-tags. Nevertheless, you should always work with a cleaned text. If you want to learn more about stop words, you can look at the additional_content folder, where you can find a text_preprocessing_with_NLTK folder, where you learn many things about text preprocessing.
 
 Now you have a function that extracts the context of a person in the text. You can use this function to get an overview of words that appear with the most important persons in the data set. Call the function with the source-text and `["goode ollever", "goode"]` as arguments and print the result.
 You get a big list with tons of words. Not very helpful. So let's refine the function a bit.
@@ -111,7 +113,8 @@ Now you can see the result of the function in the wordcloud.png file. Play aroun
 - This methods could be useful to get an overview of the data set and the persons in the data set. You can use this to get a first impression.
 - For a small data set like this, it is not very useful. But if you have a big data set with many persons, this could be a good way to get an overview of the data set. Especially if it is too much data to read it all.
 - Normally you would work with a better cleaned data set. But for this task, we had to work with the data set as it is. Data cleaning of historical data could fill an entire course on its own.
-- You can't only work with digital methods. You always need to reflect on the results and think about what they mean. As a next step on this task, you would look for the most itneresting words of your wordcloud in the text context and try to understand why they appear with the person. Think about digital methods as a tool to help you understand and organize your data.
+- You can't only work with digital methods. You always need to reflect on the results and think about what they mean. As a next step on this task, you would look for the most interesting words of your wordcloud in the text context and try to understand why they appear with the person. Think about digital methods as a tool to help you understand and organize your data.
+- If you have come this far, you are not only able to do your final project, but you are also able to start using Python as you need it. You can now start to ask your own questions to the data and answer them with Python, you can also use Python as a tool to help you with your research, for example to clean and organize your data. Most importantly: Just try things out and play around with the possibilities of Python.
 
 ## Hints
 ### 1. Most important persons in the data set:
