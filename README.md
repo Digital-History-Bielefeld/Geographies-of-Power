@@ -50,6 +50,7 @@ The workshop is structured as follows: There is a folder for each of the followi
 - Introduction to spaCy & displaCy
 
 **Session 4: Data Analysis for Historians**
+
 Your own project with:
 - Rule-based data queries with spaCy
 - Visualization
