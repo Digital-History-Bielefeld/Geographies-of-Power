@@ -5,7 +5,7 @@ from collections import Counter
 from spacy.matcher import Matcher
 from wordcloud import WordCloud
 
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_sm")
 
 def get_most_frequent_persons(text, top_n=5, merge_names=[], remove_names=[]):
     doc = nlp(text)
