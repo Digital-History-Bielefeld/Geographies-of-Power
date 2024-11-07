@@ -51,7 +51,8 @@ def get_person_context(text, person_names):
     
     # Add the person_names to the matcher. The pattern is the name of the person in lowercase, so it is case-insensitive. It is a spaCy feature, see https://spacy.io/usage/rule-based-matching
     for person_name in person_names:
-        pattern = [{"LOWER": person_name.lower()}]
+        name_tokens = person_name.lower().split()  # split by spaces and lowercase
+        pattern = [{"LOWER": token} for token in name_tokens]  # create a pattern for each token
         matcher.add("PERSON_NAME", [pattern])
     
     # Get the matches of the person_names in the text
@@ -99,6 +100,6 @@ for person, count in most_important_persons:
 
 # Call the get_person_context function to get the context of the person in the text.
 # Use the name (with different writings) you want to get the context of and pass it as below
-context_counter = get_person_context(text, ["goode ollever", "goode"])
+context_counter = get_person_context(text, person_names=["goode ollever"])
 # Call the visualize_wordcloud function to visualize the context of the person in a wordcloud
 visualize_wordcloud(context_counter)
